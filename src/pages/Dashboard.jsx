@@ -17,6 +17,9 @@ import DashboardCard10 from '../partials/dashboard/DashboardCard10';
 import DashboardCard11 from '../partials/dashboard/DashboardCard11';
 import DashboardCard12 from '../partials/dashboard/DashboardCard12';
 import DashboardCard13 from '../partials/dashboard/DashboardCard13';
+//NOVOS COMPONENTES
+import DashboardCardVoluntarios from '../partials/dashboard/DashboardCardVoluntarios';
+import DashboardCardTaxaAprovação from '../partials/dashboard/DashboardCardTaxaAprovação';
 import Banner from '../partials/Banner';
 
 function Dashboard() {
@@ -66,6 +69,12 @@ function Dashboard() {
             {/* Cards */}
             <div className="grid grid-cols-12 gap-6">
 
+              {/* Doughnut chart (Voluntários estudantes da UFSC vs Outros) */}
+              <DashboardCardVoluntarios/>
+              
+              {/* Doughnut chart (Taxa de Aprovação do cursinho) */}
+              <DashboardCardTaxaAprovação/>
+              
               {/* Line chart (Acme Plus) */}
               <DashboardCard01 />
               {/* Line chart (Acme Advanced) */}
